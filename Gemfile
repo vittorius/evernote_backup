@@ -17,14 +17,15 @@ gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 
-gem 'puma'
-
-group :development do
+group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'zeus'
+  gem 'rspec-rails', '~> 3.0'
+  gem 'rake' # for Travis
 end
 
 group :production do
   gem 'rails_12factor'
+  gem 'puma'
 end

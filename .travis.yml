@@ -1,0 +1,6 @@
+language: ruby
+bundler_args: --without production
+cache:
+  bundler: true
+  directories:
+    - tmp/cache/assets/test/sprockets
