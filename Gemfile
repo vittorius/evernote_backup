@@ -24,3 +24,7 @@ group :development do
   gem 'spring'
   gem 'zeus'
 end
+
+group :production do
+  gem 'rails_12factor'
+end
