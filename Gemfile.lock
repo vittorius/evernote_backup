@@ -138,6 +138,7 @@ DEPENDENCIES
   puma
   rails (= 4.1.0)
   rails_12factor
+  rake
   rspec-rails (~> 3.0)
   sass-rails (~> 4.0.3)
   spring
