@@ -17,6 +17,7 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  username: postgres
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
@@ -71,15 +72,6 @@ test:
 # On Heroku and other platform providers, you may have a full connection URL
 # available as an environment variable. For example:
 #
-#   DATABASE_URL="postgres://myuser:mypass@localhost/somedatabase"
-#
-# You can use this database configuration with:
-#
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
-#
+
 production:
-  <<: *default
-  database: evernote_backup_production
-  username: evernote_backup
-  password: <%= ENV['EVERNOTE_BACKUP_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
