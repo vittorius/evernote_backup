@@ -4,3 +4,5 @@ cache:
   bundler: true
   directories:
     - tmp/cache/assets/test/sprockets
+notifications:
+  email: false
